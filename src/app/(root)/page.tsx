@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/sections/home/hero";
+import HottestNews from "@/components/sections/home/hottest-news";
+import MarketTrend from "@/components/sections/home/market-trend";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="">Xin chào việt nam</h1>
-      <Button className="bg-primary-3 ">click me</Button>
-    </div>
+    <>
+      <Hero />
+      <HottestNews />
+      <MarketTrend />
+    </>
   );
 }

@@ -1,14 +1,17 @@
-import Image from "next/image";
 import React from "react";
+import Logo from "./logo";
+import { MainNav } from "./main-nav";
+import { navItems } from "@/constants";
+import { MobileNav } from "./mobile-nav";
 
 const Header = () => {
   return (
-    <header>
-      <div className="flex items-center gap-2">
-        <Image src="/logo.svg" alt="logo" width={40} height={40} />
-        <span className="font-jetbrains font-bold text-xl">Cryptify</span>
+    <header className="flex h-16 items-center px-4">
+      <Logo />
+      <MainNav items={navItems} />
+      <div className="ml-auto flex items-center space-x-4">
+        <MobileNav items={navItems} />
       </div>
-      <nav></nav>
     </header>
   );
 };

@@ -28,7 +28,7 @@
   --color-neutrals-8: var(--neutrals-8);
 
   --font-jetbrains: var(--font-jetbrains);
-  --font-raleway: var(--font-raleway-mono);
+  --font-raleways: var(--font-raleway);
 
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
@@ -76,6 +76,77 @@
     --neutrals-8: rgb(252, 252, 253);
   }
   html {
-    @apply bg-neutrals-1 text-neutrals-8;
+    background-color: var(--neutrals-1);
+    color: var(--neutrals-8);
+    font-family: var(--font-raleways);
+  }
+}
+
+@layer utilities {
+  .title-1_regular {
+    @apply text-[36px] leading-normal font-normal;
+  }
+  .title-1_medium {
+    @apply text-[36px] leading-normal font-medium;
+  }
+  .title-1_semibold {
+    @apply text-[32px] leading-normal font-semibold;
+  }
+  .title-2_regular {
+    @apply text-[24px] leading-normal font-normal;
+  }
+  .title-2_medium {
+    @apply text-[24px] leading-normal font-medium;
+  }
+  .title-2_semibold {
+    @apply text-[24px] leading-normal font-semibold;
+  }
+  .title-3_regular {
+    @apply text-[20px] leading-normal font-normal;
+  }
+  .title-3_medium {
+    @apply text-[20px] leading-normal font-medium;
+  }
+  .title-3_semibold {
+    @apply text-[20px] leading-normal font-semibold;
+  }
+  .large_regular {
+    @apply text-[18px] leading-[28.8px] font-normal;
+  }
+  .large_medium {
+    @apply text-[18px] leading-normal font-medium;
+  }
+  .large_semibold {
+    @apply text-[18px] leading-normal font-semibold;
+  }
+  .normal_regular {
+    @apply text-[15px] leading-[22px] font-normal;
+  }
+  .normal_medium {
+    @apply text-[15px] leading-[22px] font-medium;
+  }
+  .normal_semibold {
+    @apply text-[15px] leading-[22px] font-semibold;
+  }
+  .small_regular {
+    @apply text-[14px] leading-normal font-normal;
+  }
+  .small_medium {
+    @apply text-[14px] leading-normal font-medium;
+  }
+  .small_semibold {
+    @apply text-[14px] leading-normal font-semibold;
+  }
+  .mini_regular {
+    @apply text-[12px] leading-normal font-normal;
+  }
+  .mini_medium {
+    @apply text-[12px] leading-normal font-medium;
+  }
+  .micro_regular {
+    @apply text-[10px] leading-[110%] font-normal;
+  }
+  .micro_medium {
+    @apply text-[10px] leading-[110%] font-medium;
   }
 }

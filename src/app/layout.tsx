@@ -8,7 +8,7 @@ const jbSans = JetBrains_Mono({
 });
 
 const ralewaySans = Raleway({
-  variable: "--font-raleway",
+  variable: "--font-raleways",
   subsets: ["latin"],
 });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jbSans.variable} ${ralewaySans.variable} antialiased`}
+        className={`${jbSans.variable} ${ralewaySans.className} antialiased`}
       >
         {children}
       </body>
